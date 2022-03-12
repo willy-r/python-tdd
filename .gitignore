@@ -1,0 +1,5 @@
+*.sqlite3
+geckodriver.log
+venv/
+__pycache__/
+.python-version
