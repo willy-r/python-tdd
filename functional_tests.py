@@ -3,7 +3,7 @@ import unittest
 from selenium import webdriver
 
 
-class NewVisitorTests(unittest.TestCase):
+class NewVisitorTest(unittest.TestCase):
 
     def setUp(self):
         self.browser = webdriver.Firefox()
