@@ -12,8 +12,16 @@
         </header>
         
         <main>
-            <input id="id-new-item" type="text" placeholder="Enter a to-do item">
-            <table id="id-list-table"></table>
+            <form action="" method="POST">
+                {% csrf_token %}
+                <input id="id-new-item" name="todo-item" type="text" placeholder="Enter a to-do item">
+            </form>
+            
+            <table id="id-list-table">
+                <tr>
+                    <td>1: {{ new_item }}</td>
+                </tr>
+            </table>
         </main>
     </body>
 </html>
